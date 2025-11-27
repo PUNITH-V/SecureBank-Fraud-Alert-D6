@@ -1,0 +1,22 @@
+{
+  "case_id": 5,
+  "resolution_timestamp": "2025-11-27T18:30:53.181382",
+  "final_status": "confirmed_fraud",
+  "customer": {
+    "name": "david thompson",
+    "card_ending": "7777"
+  },
+  "transaction": {
+    "amount": "$4999.00",
+    "merchant": "Tech Support Scam Payment",
+    "source": "microsoft-support-fake.xyz",
+    "location": "Kolkata, India",
+    "time": "2025-11-27 04:22:09",
+    "category": "tech_support_scam"
+  },
+  "verification": {
+    "security_question": "What is your favorite food?",
+    "verified": true
+  },
+  "outcome": "Customer david thompson denied transaction. Card blocked. Dispute initiated on 2025-11-27 18:30:53"
+}

@@ -1,0 +1,22 @@
+{
+  "case_id": 3,
+  "resolution_timestamp": "2025-11-27T18:26:00.802627",
+  "final_status": "confirmed_fraud",
+  "customer": {
+    "name": "michael chen",
+    "card_ending": "1111"
+  },
+  "transaction": {
+    "amount": "$8500.00",
+    "merchant": "Fake IRS Tax Payment",
+    "source": "irs-payment-urgent.cn",
+    "location": "Beijing, China",
+    "time": "2025-11-26 23:12:45",
+    "category": "government_impersonation"
+  },
+  "verification": {
+    "security_question": "What is your favorite color?",
+    "verified": true
+  },
+  "outcome": "Customer michael chen denied transaction. Card blocked. Dispute initiated on 2025-11-27 18:26:00"
+}
