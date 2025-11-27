@@ -70,13 +70,25 @@ Navigate to: http://localhost:3000
 
 ## 🎤 Demo Script
 
-### Quick Test (2 minutes)
+### Quick Test - Michael Chen (IRS Scam)
 
-1. **Click** "Connect to Fraud Department"
-2. **Say:** "Raju"
-3. **Say:** "Nellore"
-4. **Say:** "No"
-5. **Done!** Card blocked, case marked as fraud
+1. **Click** "Connect to Fraud Prevention"
+2. **Say:** "Michael Chen"
+3. **Say:** "54321"
+4. **Say:** "1111"
+5. **Say:** "Blue"
+6. **Say:** "This is fraud" or "No"
+7. **Done!** Case marked as fraud, saved to database
+
+### Alternative Quick Test - John Smith (Wire Transfer)
+
+1. **Click** "Connect to Fraud Prevention"
+2. **Say:** "John Smith"
+3. **Say:** "12345"
+4. **Say:** "4242"
+5. **Say:** "Johnson"
+6. **Say:** "This is fraud"
+7. **Done!** ✅
 
 ### View Results
 
@@ -85,46 +97,66 @@ Navigate to: http://localhost:3000
 cd Day6/backend
 uv run python view_cases.py
 
-# Show JSON file
-cat resolved_cases/case_6_Raju_*.json
+# Show JSON files
+ls -la resolved_cases/
+cat resolved_cases/case_3_michael_chen_*.json
 ```
 
-## 📊 Sample Fraud Cases
+## 📊 Sample Fraud Cases (All Suspicious)
 
-| Customer | Security Answer | Amount | Transaction | Location |
-|----------|----------------|--------|-------------|----------|
-| **Raju** | **Nellore** | **$25,000** | Wire Transfer | Dubai, UAE |
-| Sarah Williams | Boston | $8,750 | Luxury Watch | Moscow, Russia |
-| Michael Chen | Blue | $15,000 | Crypto Exchange | Lagos, Nigeria |
-| John Smith | Johnson | $2,499 | E-commerce | Shanghai, China |
-| Emily Rodriguez | Max | $3,299 | Electronics | Shenzhen, China |
-| David Thompson | Pizza | $599 | Gaming | Unknown |
+| Customer | Account | SSN | Security Answer | Amount | Transaction Type |
+|----------|---------|-----|-----------------|--------|------------------|
+| **John Smith** | 12345 | 4242 | **Johnson** | **$9,999.99** | **Wire Transfer Scam** |
+| Sarah Williams | 67890 | 8765 | Boston | $15,750.00 | Crypto Investment Scam |
+| **Michael Chen** | 54321 | 1111 | **Blue** | **$8,500.00** | **IRS Impersonation** |
+| Emily Rodriguez | 98765 | 3333 | Max | $12,499.99 | Luxury Goods Scam |
+| David Thompson | 11111 | 7777 | Pizza | $4,999.00 | Tech Support Scam |
+| Lisa Anderson | 22222 | 5555 | Honda | $7,800.00 | Romance Scam |
+| Robert Martinez | 33333 | 9999 | Inception | $3,299.99 | Phishing Site |
+| Jennifer Lee | 44444 | 2222 | Wilson | $2,500.00 | Lottery Scam |
 
-## 🎬 Conversation Flow
+## 🎬 Conversation Flow Example
+
+### Michael Chen - IRS Impersonation Scam
 
 ```
-Agent: "Hello, this is the SecureBank Fraud Prevention Department. 
-        May I please have your name?"
+Agent: "Welcome to SecureBank fraud prevention. We've detected suspicious 
+        activity on your account. May I have your name please?"
 
-You:   "Raju"
+You:   "Michael Chen"
 
-Agent: "Thank you, Raju. I've pulled up your account. I can see we 
-        have a fraud alert on your card ending in 5678. Before we 
-        proceed, I need to verify your identity. What city are you from?"
+Agent: "Thank you, Michael Chen. Can you please provide your account number?"
 
-You:   "Nellore"
+You:   "54321"
 
-Agent: "Perfect, thank you. Now, regarding the suspicious transaction: 
-        We detected a charge of $25,000.00 to International Wire Transfer 
-        from unknown-sender.com in Dubai, UAE on November 27th at 5:30 AM. 
+Agent: "Thank you. Please provide the last 4 digits of your social 
+        security number."
+
+You:   "1111"
+
+Agent: "For security verification, what is your favorite color?"
+
+You:   "Blue"
+
+Agent: "Thank you for verifying your identity. I found a suspicious 
+        transaction on your account. Let me read you the details.
+        
+        A charge of $8,500.00 was made to 'Fake IRS Tax Payment' from 
+        irs-payment-urgent.cn in Beijing, China. The transaction occurred 
+        on November 26th at 11:12 PM.
+        
         Did you authorize this transaction?"
 
-You:   "No"
+You:   "No, this is fraud"
 
-Agent: "I understand, Raju. I've immediately blocked your card ending 
-        in 5678 to prevent any further unauthorized charges. You will 
-        NOT be charged for this $25,000.00 transaction. We'll mail you 
-        a replacement card within 3 to 5 business days..."
+Agent: "I understand. I've marked this transaction as fraudulent. We'll 
+        block the charge immediately and issue you a new card within 3-5 
+        business days. Your account is now secure. Is there anything else 
+        I can help you with?"
+
+You:   "No, thank you"
+
+Agent: "Thank you for your time. Your account is now secure. Have a great day!"
 ```
 
 ## 🛠️ Tech Stack

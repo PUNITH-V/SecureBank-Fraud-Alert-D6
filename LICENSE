@@ -1,0 +1,67 @@
+MIT License
+
+Copyright (c) 2025 PUNITH-V
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+---
+
+## Third-Party Licenses
+
+This project uses the following third-party services and libraries:
+
+### Services
+- **LiveKit** - Real-time communication platform (Apache 2.0)
+- **Google Gemini** - AI language model (Google Terms of Service)
+- **Murf AI** - Text-to-speech service (Murf AI Terms)
+- **AssemblyAI** - Speech-to-text service (AssemblyAI Terms)
+
+### Frontend Libraries
+- **Next.js** - React framework (MIT)
+- **React** - UI library (MIT)
+- **Tailwind CSS** - CSS framework (MIT)
+- **Framer Motion** - Animation library (MIT)
+- **LiveKit Components** - Voice interface components (Apache 2.0)
+
+### Backend Libraries
+- **Python** - Programming language (PSF License)
+- **LiveKit Agents** - Voice AI framework (Apache 2.0)
+- **SQLite** - Database (Public Domain)
+
+## Disclaimer
+
+This is a demonstration application for educational purposes only. It contains:
+- Fake customer data
+- Simulated fraud scenarios
+- Mock security questions and answers
+
+**DO NOT USE WITH REAL CUSTOMER DATA OR IN PRODUCTION ENVIRONMENTS**
+
+This application is not intended for actual fraud detection or banking operations.
+All data, scenarios, and transactions are fictional and for demonstration purposes only.
+
+## Attribution
+
+Built as part of the Murf AI Voice Agents Challenge 2025.
+
+Special thanks to:
+- LiveKit for the voice AI framework
+- Murf AI for ultra-fast TTS
+- Google for Gemini AI
+- The open-source community
